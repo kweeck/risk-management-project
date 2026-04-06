@@ -9,3 +9,7 @@ __pycache__/
 
 venv/
 .env
+
+mlflow.db
+
+mlruns

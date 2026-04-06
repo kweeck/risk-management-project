@@ -13,7 +13,7 @@ SELECT
     open_acc,
     revol_util,
     total_acc,
-
+    
     -- производные фичи
     loan_amnt / NULLIF(annual_inc, 0)        AS loan_to_income,
     int_rate * dti                            AS rate_dti_interaction,
@@ -22,7 +22,7 @@ SELECT
     -- категориальные
     home_ownership,
     purpose,
-    term,
+    CAST(REGEXP_EXTRACT(term, '[0-9]+') AS INTEGER) AS term_months,
 
     -- для LGD
     ead,
