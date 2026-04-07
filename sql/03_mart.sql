@@ -5,7 +5,6 @@ SELECT
 
     -- исходные числовые фичи
     loan_amnt,
-    int_rate,
     installment,
     annual_inc,
     dti,
@@ -16,7 +15,6 @@ SELECT
     
     -- производные фичи
     loan_amnt / NULLIF(annual_inc, 0)        AS loan_to_income,
-    int_rate * dti                            AS rate_dti_interaction,
     installment / NULLIF(annual_inc / 12, 0) AS payment_to_income,
 
     -- категориальные

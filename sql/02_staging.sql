@@ -10,7 +10,6 @@ SELECT
 
     -- числовые фичи
     loan_amnt,
-    int_rate / 100 AS int_rate,
     installment,
     annual_inc,
     dti,
