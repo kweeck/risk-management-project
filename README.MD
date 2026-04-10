@@ -21,6 +21,8 @@ Python · DuckDB · XGBoost · Scikit-learn · MLflow · Statsmodels
 | VaR / EAD | 0.363 |
 
 ## Структура проекта
+
+```
 risk-project/
 ├── data/                   # не отслеживается git
 ├── notebooks/
@@ -37,6 +39,8 @@ risk-project/
 │   └── 03_mart.sql             # витрина фич
 ├── models/ 
 └── src/
+```
+
 ## Методология
 
 ### SQL Data Warehouse
