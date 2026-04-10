@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/kweec/python_files/risk-project/models/m-b19cb262d11e4cbba9161a8967e61d10/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+    skops_trusted_types: null
+mlflow_version: 3.10.1
+model_id: m-b19cb262d11e4cbba9161a8967e61d10
+model_size_bytes: 503502
+model_uuid: m-b19cb262d11e4cbba9161a8967e61d10
+prompts: null
+run_id: a14e67321b124b5b9fb9fb1c061e34c5
+utc_time_created: '2026-04-10 11:03:39.656526'
