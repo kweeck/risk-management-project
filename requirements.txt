@@ -1,0 +1,15 @@
+duckdb
+pandas
+numpy
+scikit-learn
+xgboost
+mlflow
+statsmodels
+matplotlib
+plotly
+scipy
+shap
+optuna
+pandas-datareader
+category_encoders
+jupyter
