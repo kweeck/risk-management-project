@@ -57,7 +57,7 @@ PD строилась двумя методами:
 - Logit-регрессия: Gini 0.41, AUC 0.71
 - XGBoost: Gini 0.42, AUC 0.71
 
-![PD_features](images/pda_feat.png)
+![PD_features](images/importance.png)
 ![PD_shap](images/pd_shap.png)
 
 Для финального пайплайна выбрана логистическая регрессия -
