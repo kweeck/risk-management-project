@@ -1,6 +1,5 @@
 CREATE VIEW mart.features AS
 SELECT
-    id,
     is_default,
 
     -- исходные числовые фичи
@@ -13,11 +12,9 @@ SELECT
     revol_util,
     total_acc,
     
-    -- производные фичи
     loan_amnt / NULLIF(annual_inc, 0)        AS loan_to_income,
     installment / NULLIF(annual_inc / 12, 0) AS payment_to_income,
 
-    -- категориальные
     home_ownership,
     purpose,
     CAST(REGEXP_EXTRACT(term, '[0-9]+') AS INTEGER) AS term_months,

@@ -1,14 +1,10 @@
 CREATE TABLE staging.loans AS
 SELECT
-    id,
-
-    -- целевая переменная
     CASE
         WHEN loan_status IN ('Charged Off', 'Default') THEN 1
         ELSE 0
     END AS is_default,
 
-    -- числовые фичи
     loan_amnt,
     installment,
     annual_inc,
@@ -20,12 +16,10 @@ SELECT
     revol_util,
     total_acc,
 
-    -- категориальные фичи
     home_ownership,
     purpose,
     term,
 
-    -- для LGD модели понадобится
     loan_amnt                                          AS ead,
     total_rec_prncp,
     recoveries,
